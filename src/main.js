@@ -37,7 +37,7 @@ router.post("/", (req, res) => {
     name: `${input.firstName} ${input.lastName}`,
     date: new Date().toLocaleDateString(),
     message_detail: `Nombre: ${input.firstName} ${input.lastName}`,
-    greetings: `Contacto: ${input.email}`,
+    greetings: `Contacto: ${input.email}. Tel: ${input.telephone}`,
     calltoaction_url: "https://aiways.cr",
     calltoaction_text: "aiways.cr",
     footer_detail: "",
