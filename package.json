@@ -5,7 +5,8 @@
   "main": "main.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --delay 1 src/main.js --ext js"
+    "dev": "nodemon --delay 1 src/main.js --ext js",
+    "start": "node src/main.js"
   },
   "author": "Carlos Chacon",
   "license": "ISC",
