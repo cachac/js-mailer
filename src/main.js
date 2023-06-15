@@ -63,7 +63,7 @@ router.post("/", (req, res) => {
       }
     `,
     variables: {
-      to: "carlos.echc11@gmail.com",
+      to: "electroautoscr@gmail.com",
       account: "info@storylabs.dev",
       template: {
         app: "storylabs",
