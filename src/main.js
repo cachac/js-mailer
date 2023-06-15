@@ -25,6 +25,7 @@ process.on("unhandledRejection", (err) => {
 });
 
 const router = express.Router();
+const to = "electroautoscr@gmail.com";
 
 router.post("/", (req, res) => {
   const input = req.body;
@@ -63,7 +64,7 @@ router.post("/", (req, res) => {
       }
     `,
     variables: {
-      to: "electroautoscr@gmail.com",
+      to,
       account: "info@storylabs.dev",
       template: {
         app: "storylabs",
@@ -91,4 +92,5 @@ app.use(router);
 
 app.listen(3020, () => {
   console.log(`Listening to port ${3020} - Express JS | REST API`);
+  console.log(`Sending to ${to}`);
 });
