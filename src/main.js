@@ -25,7 +25,7 @@ process.on("unhandledRejection", (err) => {
 
 const router = express.Router();
 
-router.get("/", (req, res) => {
+router.post("/", (req, res) => {
   const input = req.body;
 
   console.log("input", input);
